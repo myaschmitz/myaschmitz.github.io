@@ -1,0 +1,36 @@
+html {
+  height: 100%;
+  margin: 0;
+  /* background-image: url(./images/mtn-bg.jpg); */
+  /* background-color: #87acab; #7f979b; */
+  background-color: #040a0a;
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+body {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* margin: 0; */
+  /* background-color: #D8A48F; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #eaeaea;
+  backdrop-filter: blur(2px);
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
