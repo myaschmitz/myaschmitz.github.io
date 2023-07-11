@@ -7,8 +7,8 @@ const About = forwardRef((props, ref) => {
     const nameRef = useRef(null);
 
     return (
-        <div style={{ textAlign: 'left', padding: '0.5em 0 0 0.5em' }} id="About" ref={ref}>
-            <h1 ref={nameRef} style={{ fontSize: '6em', marginBottom: '0' }}>I'm Mya Schmitz.</h1>
+        <div style={{ paddingTop: '0.5em' }} id="About" ref={ref}>
+            <h1 ref={nameRef} style={{ fontSize: '8vw', marginBottom: '0' }}>I'm Mya Schmitz.</h1>
             <AboutInfo nameRef={nameRef}></AboutInfo>
         </div>
     );

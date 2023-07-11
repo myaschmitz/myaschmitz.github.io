@@ -44,17 +44,261 @@
   cursor: pointer;
 }
 
+/* .downarrow-style {
+  vertical-align: middle;
+} */
+
+/* @media (min-width: 821px) {
+  .downarrow-style {
+    size: 3vw;
+  }
+} */
+
+.view-work {
+  font-size: 3.5vw;
+  border: 2px solid #eaeaea;
+  padding: 10px 8px;
+  /* vertical-align: middle; */
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@media (min-width: 821px) {
+  .view-work {
+    font-size: 2vw;
+  }
+}
+
+.view-work:hover {
+  background-color: #243737;
+  border: 2px solid #243737;
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
 /* #endregion Parallax Banner */
 
 /* #region About */
+.about-intro {
+  opacity: 0;
+  transition: all 1s ease-in;
+}
+
+.about-intro.visible {
+  opacity: 1;
+}
+
 .about-container {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
   height: 100vh;
 }
 
-/* #region About */
+.about-description {
+  opacity: 0;
+  transition: all 3s ease-in;
+}
+
+.about-description.visible {
+  opacity: 1;
+}
+
+/* #endregion About */
+
+/* #region Software Developer */
+.word-bg {
+  position: absolute;
+  margin-top: 0;
+  top: 0;
+  font-size: 30vw;
+  z-index: -100;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: #eaeaea;
+  transform: translateX(-50%);
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  text-align: right;
+  float: left;
+  padding-right: 41vw;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  text-align: left;
+  float: right;
+  padding-left: 41vw;
+}
+
+.timeline-content {
+  margin: 0 3em;
+  width: 100%;
+}
+
+/* The circles on the timeline */
+/* .timeline-content:after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+} */
+
+.timeline-title {
+  font-size: 5vw;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.timeline-description {
+  font-size: 3vw;
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media (min-width: 450px) {
+  .timeline-item:nth-child(odd) .timeline-content {
+    padding-right: 44vw;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content {
+    padding-left: 44vw;
+  }
+
+  .timeline-title {
+    font-size: 3vw;
+  }
+
+  .timeline-description {
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 680px) {
+  .timeline-item:nth-child(odd) .timeline-content {
+    padding-right: 46vw;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content {
+    padding-left: 46vw;
+  }
+}
+
+@media (min-width: 900px) {
+  .timeline-item:nth-child(odd) .timeline-content {
+    padding-right: 47vw;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content {
+    padding-left: 47vw;
+  }
+}
+
+@media (min-width: 1300px) {
+  .timeline-item:nth-child(odd) .timeline-content {
+    padding-right: 44vw;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content {
+    padding-left: 44vw;
+  }
+}
+
+/* .timeline {
+  position: relative;
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+@media (min-width: 768px) {
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    margin-left: -1px;
+    background-color: #eaeaea;
+  }
+}
+
+} */
+
+.timeline-section-left {
+  width: 47%;
+  float: left;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.timeline-li-left {
+  list-style: none;
+  position: relative;
+  width: 47%;
+  float: left;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.timeline-section-right {
+  width: 50%;
+  float: right;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.timeline-li-right {
+  list-style: none;
+  position: relative;
+  width: 50%;
+  float: right;
+  text-align: left;
+  /* padding-left: 30px; */
+}
+
+.timeline-p {
+  width: 15em;
+  text-align: right;
+}
+
+/* #endregion Software Developer */
 
 /* #region Resume */
 .resume {
@@ -79,26 +323,17 @@
 
 /* #endregion Resume */
 
-/* CSS for the text that will move up */
-.move-up {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  animation-duration: 0.5s;
-  animation-name: move-upp;
-  animation-fill-mode: forwards;
+/* #region Social Links */
+.social-styles {
+  margin: 0 2em 1em 2em;
+  text-decoration: none;
+  color: #eaeaea;
+  transition: all .5s ease-in;
 }
 
-/* CSS animation that moves the text up */
-@keyframes move-upp {
-  from {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  to {
-    transform: translateY(-100%);
-    opacity: 1;
-  }
+.social-styles:hover {
+  transition: all .5s ease-in;
+  color: cadetblue;
 }
+
+/* #endregion Social Links */
