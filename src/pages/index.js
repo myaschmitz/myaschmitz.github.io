@@ -5,9 +5,8 @@ import Resume from './resume';
 import Skills from './skills';
 import Projects from './projects';
 import SocialLinks from '../components/SocialLinks';
-import SoftwareDeveloper from '../components/About/SoftwareDeveloper';
+import Timeline from '../components/About/Timeline';
 import { useRef } from 'react';
-import Explorer from '../components/About/Explorer';
 
 function Home() {
   const aboutRef = useRef(null);
@@ -16,10 +15,9 @@ function Home() {
     <div style={{ verticalAlign: 'center' }}>
       <ParallaxBannerImage aboutRef={aboutRef} />
       <About ref={aboutRef} />
-      <SoftwareDeveloper />
-      <Explorer />
-      <Resume id="resume" />
+      <Timeline />
       <Skills />
+      <Resume id="resume" />
       <Projects />
       <SocialLinks />
     </div>

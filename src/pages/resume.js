@@ -10,6 +10,8 @@ const Resume = () => {
     };
 
     return (
+        // TODO: If on mobile, have link to open resume in a new page rather than expand/collapse
+
         <div
             className="resume-button-container" style={{
                 height: isCollapsed ? 'auto' : '100vh',

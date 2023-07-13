@@ -9,7 +9,7 @@ const ParallaxBannerImage = ({ aboutRef }) => {
     const headline = {
         translateY: [0, 2],
         scale: [2.0, 0.4, "easeOutCubic"],
-        opacity: [1, 0],
+        opacity: [0.9, 0],
         shouldAlwaysCompleteAnimation: true,
         expanded: false,
         children: (
@@ -30,7 +30,7 @@ const ParallaxBannerImage = ({ aboutRef }) => {
     }
 
     const gradientOverlay = {
-        opacity: [0.2, 1, "easeOutCubic"],
+        opacity: [0.6, 1, "easeOutCubic"],
         shouldAlwaysCompleteAnimation: true,
         expanded: false,
         children: <div className="gradient inset" />

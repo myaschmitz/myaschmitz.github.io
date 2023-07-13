@@ -57,12 +57,13 @@ const AboutInfo = ({ nameRef }) => {
                 }}>
             </ParallaxBanner> */}
             <Parallax onEnter={() => handleAboutTitleEnter()} /*opacity={[0, 1, "easeInOut"]}*/>
-                <h2 className={`about-intro ${showDevDesc ? "visible" : ""}`} style={{fontSize: '2.4vw'}}>Software developer | Explorer | Dreamer.</h2>
+                {/* <h2 className={`about-intro ${showDevDesc ? "visible" : ""}`} style={{fontSize: '2.4vw'}}>Software developer | Explorer | Dreamer.</h2> */}
             </Parallax>
             <Parallax onEnter={() => handleIntroEnter()}>
                 <p className={`about-description ${showDevDesc ? "visible" : ""}`}>
                     I recently graduated from the University of Wisconsin-Madison with a degree in Computer Engineering and Computer Science.
-                    I also earned a certificate in French during my studies.
+                    I also earned a certificate in French during my studies. I have experience with a variety of technologies ranging from software to hardware,
+                    but I enjoy working in web development the most.
                 </p>
             </Parallax>
         </div>
