@@ -1,7 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick"
 import "slick-carousel/slick/slick-theme.css";
-import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick.css";
+import 'react-icons/fa';
+import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
 
 const Timeline = () => {
     const settings = {
@@ -11,78 +13,57 @@ const Timeline = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        // nextArrow: <NextArrow />,
-        // prevArrow: <PrevArrow />
+        nextArrow: <FaChevronRight />,
+        prevArrow: <FaChevronLeft />
     };
 
-    function NextArrow(props) {
-        const { className, style, onClick } = props;
-        return (
-            <div
-                className={className}
-                style={{ ...style, display: "block" }}
-                onClick={onClick}
-            />
-        );
-    }
-
-    function PrevArrow(props) {
-        const { className, style, onClick } = props;
-        return (
-            <div
-                className={className}
-                style={{ ...style, display: "block" }}
-                onClick={onClick}
-            />
-        );
-    }
-
     return (
-        <div>
-            <div style={{ display: 'flex', flexDirection: 'column', position: 'relative', alignItems: 'center', overflow: 'initial' }}>
-                <div style={{ width: '80%', justifyContent: 'center' }}>
-                    <h2 style={{ textAlign: 'center', justifyContent: 'center' }}>My History</h2>
-                    <Slider {...settings}>
-                        {/* <div className="slider-section">
-                            <h3>September 2017 - December 2017</h3>
-                            <p>Selected for my high school's mentorship program where I had the opportunity to shadow
-                                various engineers working with artificial aortic heart valves at Medtronic.</p>
-                        </div>
-                        <div className="slider-section">
-                            <h3>June 2018</h3>
-                            <p>Graduated from Eagan High School.</p><br />
-                        </div> */}
-                        <div className="slider-section">
-                            <h3>September 2018</h3>
-                            <p>Began studies in Computer Engineering and Computer Science and a certificate in French at
-                                the University of Wisconsin-Madison.</p>
-                        </div>
-                        <div className="slider-section">
-                            <h3>May 2019 - August 2019</h3>
-                            <p>Interned at Medtronic as a Software Engineering Intern designing a .NET web application which
-                                boosted the efficiency of a localization process.</p>
-                        </div>
-                        <div className="slider-section">
-                            <h3>May 2020 - August 2020</h3>
-                            <p>Interned at Collins Aerospace as a Software Engineering Intern updating and refining a .NET
-                                web application to streamline users' experiences.</p>
-                        </div>
-                        <div className="slider-section">
-                            <h3>May 2021 - August 2021</h3>
-                            <p>Interned for a second summer at Collins Aerospace as a Software Engineering Intern. I worked
-                                on a brand new project to automate a process for the customers and developers alike through web development.</p>
-                        </div>
-                        <div className="slider-section">
-                            <h3>May 2022</h3>
-                            <p>Graduated from the University of Wisconsin-Madison!</p>
-                        </div>
-                        <div className="slider-section">
-                            <h3>August 2022 - Present</h3>
-                            <p>Continuing to work for Collins Aerospace working as a .NET developer on the InteliSight Ground Portal!</p>
-                        </div>
-                    </Slider>
-                </div>
+        <div className="section-container" style={{ color: 'var(--light-font-color)', background: 'var(--color-tertiary)' }}>
+            <h2 className={"section-header"} style={{ color: 'var(--light-font-color)' }}>WORK EXPERIENCE</h2>
+            <div className="underline" style={{ background: 'var(--color-brown-accent)' }}></div>
+            <div style={{ width: '80%', marginBottom: '2em' }}>
+                <Slider {...settings}>
+                    <div className="slider-section">
+                        <h3>COLLINS AEROSPACE</h3>
+                        <h4>Software Enginer I</h4>
+                        <h5>August 2022 - Present</h5>
+                        <p>
+                            I currently maintain a .NET web application by identifying and resolving issues and bugs.
+                            I work to improve the app through implementing upgrades and improvements to .NET 6 from the legacy web application.
+                            I also collaborate often with team members and utilize Agile methodology to achieve the efficient delivery of these updates to the app.
+                        </p>
+                    </div>
+                    <div className="slider-section">
+                        <h3>COLLINS AEROSPACE</h3>
+                        <h4>Software Engineering Intern</h4>
+                        <h5>May 2021 - August 2022</h5>
+                        <p>At my second internship with Collins, I developed a web application to help customers optimize their workflow using Flask framework, HTML, and CSS.
+                            I also wrote and edited automated tests with Robot framework for efficiently testing code.
+                            I worked with my team using Agile, Scrum, and Kanban for our software development process along with Git and Bitbucket for handling code and collaboration.
+                        </p>
+                    </div>
+                    <div className="slider-section">
+                        <h3>COLLINS AEROSPACE</h3>
+                        <h4>Software Engineering Intern</h4>
+                        <h5>May 2020 - August 2020</h5>
+                        <p>During my internship, I generated a more streamlined user experience of a widely used .NET web application through enhancing the design and functionality of 15+ pages.
+                            I also aided in refining the web app, ensuring responsiveness to various web browser environments.
+                            To deliver these updates to the web application, I utilized Git and Azure DevOps.
+                        </p>
+                    </div>
+                    <div className="slider-section">
+                        <h3>MEDTRONIC</h3>
+                        <h4>Software Engineering Intern</h4>
+                        <h5>May 2020 - August 2020</h5>
+                        <p>At Medtronic, I achieved rapid delivery using Agile methodology to develop and design a .NET web application that effectively handles communication across 2000+ files.
+                            I aided in revamping the web application’s features to allow for seamless user interactions using jQuery/AJAX requests for threaded comments.
+                            Through a number of updates, I also helped to boost the efficiency of a translations localization process by reducing the process time by upwards of 40%.
+                        </p>
+                    </div>
+                </Slider>
+                <br />
             </div>
+            <br />
         </div>
     );
 }

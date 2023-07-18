@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './pages';
+import Home from './sections';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {

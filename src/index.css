@@ -3,7 +3,8 @@ html {
   margin: 0;
   /* background-image: url(./images/mtn-bg.jpg); */
   /* background-color: #87acab; #7f979b; */
-  background-color: #040a0a;
+  /* background-color: #040a0a; */
+  background-color: var(--color-primary);
   /* background-position: center;
   background-repeat: no-repeat;
   background-size: cover; */
@@ -25,8 +26,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #eaeaea;
-  backdrop-filter: blur(2px);
+  color: var(--dark-font-color);
+  /* backdrop-blacklter: blur(2px); */
   background-size: cover;
 }
 

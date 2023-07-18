@@ -2,8 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  color: #eaeaea;
+:root {
+  --light-font-color: #eaeaea;
+  --dark-font-color: black;
+  --color-primary: #BBC5C8;
+  --color-secondary: #fcd19c;
+  --color-tertiary: #263d42;
+  --color-red-accent: #823038;
+  --color-orange-accent: #DEAD8C;
+  --color-green-accent: #778770;
+  --color-brown-accent: #A76152;
+  --color-extra-accent2: #53131E;
+  --color-extra-accent: #53131E;
+
 }
 
 .App {
@@ -29,7 +40,6 @@ html {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #eaeaea;
 }
 
 .App-link {
