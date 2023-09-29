@@ -14,6 +14,7 @@
   position: relative;
   justify-content: center;
   align-items: center;
+  padding: 15vh 0;
 }
 
 .lightweight {
@@ -23,8 +24,7 @@
 .section-header {
   font-size: 2.5em;
   font-weight: lighter;
-  margin-top: 5vh;
-  margin-bottom: 0.3em;
+  margin: 0.3em 0 0.3em 0;
 }
 
 .subsection-header {
@@ -151,9 +151,9 @@
   width: 55%;
   display: flex;
   flex-direction: row;
+  gap: 2em;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5vh;
 }
 
 @media screen and (max-width: 700px) {
@@ -173,7 +173,6 @@
   width: 8em;
   border-radius: 50%;
   box-shadow: 3px 3px 3px var(--color-tertiary);
-  margin: 0 2em 0 0;
   vertical-align: middle;
   opacity: 0;
   transition: all 1.6s cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -181,6 +180,7 @@
 
 @media screen and (max-width: 640px) {
   .about-headshot {
+    margin-top: 2em;
     width: 10em;
   }
 }
@@ -245,6 +245,20 @@
 
 .slider-section p {
   padding: 0 1.5em;
+}
+
+.slider-desc-span {
+  font-size: 1.5em;
+  font-weight: lighter;
+  margin: 0 0.5em;
+  color: var(--color-brown-accent);
+}
+
+@media screen and (max-width: 580px) {
+  .slider-section h4 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .slick-track {
@@ -318,6 +332,37 @@ svg.slick-next:hover {
 
 /* #endregion Resume */
 
+/* #region Skills */
+.skills-resume {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.skills-resume a {
+  font-weight: bold;
+  transition: 1s ease-in-out;
+  text-decoration: none;
+}
+
+.resume-link {
+  background: linear-gradient(90deg, var(--color-orange-accent), var(--color-orange-accent));
+  background-position: 0.25em 0.7em;
+  background-repeat: no-repeat;
+  padding-inline-end: 0.25em;
+  line-height: 1.5;
+}
+
+.skills-resume a:visited {
+  color: var(--dark-font-color);
+}
+
+.skills-resume a:hover {
+  transition: 0.5s ease-in-out;
+  color: var(--color-extra-accent11);
+}
+
+/* #endregion Skills */
+
 /* #region Projects */
 .project-grid {
   display: flex;
@@ -380,11 +425,18 @@ svg.slick-next:hover {
   opacity: 0;
   transition: .5s ease-in-out;
   background-color: var(--color-tertiary);
+  text-align: center;
+  font-size: 2vh;
 }
 
-.overlay p {
+.overlay h4 {
+  margin-bottom: 0;
   vertical-align: center;
-  font-weight: bold;
+}
+
+.overlay h4 p {
+  margin: 0px;
+  vertical-align: center;
 }
 
 .overlay:hover {
@@ -394,6 +446,22 @@ svg.slick-next:hover {
 
 .overlay:hover p {
   opacity: 1 !important;
+}
+
+/* Make mobile and tablet friendly for no hover */
+@media screen and (max-width: 1024px) {
+  .overlay {
+    opacity: 0.5;
+  }
+
+  .overlay p {
+    opacity: 1 !important;
+  }
+
+  div.project-card figure img {
+    transform: scale(1.1);
+    filter: blur(3px);
+  }
 }
 
 div.project-card figure img {
@@ -416,9 +484,7 @@ div.project-card figure:hover img {
 }
 
 @media screen and (max-width: 460px) {
-  .social-styles {
-    
-  }
+  .social-styles {}
 }
 
 .social-styles:hover {

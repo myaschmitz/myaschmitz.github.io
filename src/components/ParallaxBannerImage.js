@@ -10,7 +10,7 @@ const ParallaxBannerImage = ({ aboutRef }) => {
         shouldAlwaysCompleteAnimation: true,
         expanded: false,
         children: (
-            <div className="inset center" style={{ lineHeight: 0.05 }}>
+            <div className="inset center" style={{ lineHeight: 0.05, marginTop: '3em' }}>
                 <h1 className="banner-intro" style={{ color: 'var(--light-font-color)', fontSize: '4vw', verticalAlign: 'middle', marginBottom: '0px' }}>Hi! I'm <span style={{ color: 'var(--color-secondary)' }}>Mya</span></h1>
                 <Parallax scale={[1., 0.4, "easeOutCubic"]}>
                     <a className="banner-downarrow" onClick={() => aboutRef.current.scrollIntoView({ behavior: 'smooth' })}>

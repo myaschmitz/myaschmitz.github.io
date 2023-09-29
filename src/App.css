@@ -13,7 +13,19 @@
   --color-green-accent: #778770;
   --color-brown-accent: #A76152;
   --color-extra-accent2: #53131E;
-  --color-extra-accent: #53131E;
+  --color-extra-accent: #3C1518;
+  --color-yellow-accent: #FCD19C;
+  --color-purple-accent: #90708C;
+  --color-extra-accent3: #587D71;
+  --color-extra-accent4: #B5BD89;
+  --color-light-orange-accent: #FAE3C6;
+  --color-extra-accent6: #5B2333;
+  --color-extra-accent7: #A8763E;
+  --color-extra-accent8: #7F534B;
+  --color-extra-accent9: #7D6167;
+  --color-extra-accent10: #754F5B;
+  --color-extra-accent11: #C17767;
+  --color-extra-accent12: #FFDB99;
 
 }
 
@@ -50,6 +62,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
