@@ -36,7 +36,6 @@ const ParallaxBannerImage = ({ aboutRef }) => {
     return (
         <ParallaxBanner
             layers={[bannerImage, gradientOverlay, headline]}
-            className="full"
             style={{
                 height: "100vh",
                 alignText: 'center',

@@ -1,6 +1,8 @@
 import solarSystem from "../images/solar-system-ss.jpg";
+import cpu1 from "../images/cpu-image.webp";
+import cpu from "../images/cpu-2.jpg";
 import demic from "../images/demic-ss.png";
-import cpu from "../images/cpu-image.webp";
+import financeApp from "../images/finance-app.png";
 
 const Projects = () => {
     return (
@@ -11,7 +13,7 @@ const Projects = () => {
                 <div className="project-card">
                     <figure>
                         <a style={{ textDecoration: "none", color: "inherit" }} target="_blank" href="https://cs559-spring22.github.io/wbfinal-myaschmitz/for_students/final-grtown.html">
-                            <img src={solarSystem} alt="Solar system screenshot" />
+                            <img src={solarSystem} alt="Screenshot of the Solar System built using 3D graphics concepts and THREE.js elements." />
                             <div class="overlay">
                                 <div style={{ position: "relative" }}>
                                     <h4>The Solar System</h4>
@@ -23,21 +25,22 @@ const Projects = () => {
                 </div>
                 <div className="project-card">
                     <figure>
-                        {/* <a style={{ textDecoration: "none", color: "inherit" }} target="_blank" href=""> */}
-                        <img src={cpu} alt="Image of a CPU" />
-                        <div class="overlay">
-                            <div style={{ position: "relative" }}>
-                                <h4>Pipelined Processor</h4>
-                                <p>Designed and built a 5 stage pipelined processor for the WISC-SP13 ISA.</p>
+                        <a style={{ textDecoration: "none", color: "inherit" }} target="_blank" href="https://github.com/myaschmitz/project-pipelined">
+                            <img src={cpu} alt="Image of a CPU" />
+                            <div class="overlay">
+                                <div style={{ position: "relative" }}>
+                                    <h4>Pipelined Processor</h4>
+                                    <p>Designed and built a 5 stage pipelined processor for the WISC-SP13 ISA.</p>
+                                </div>
                             </div>
-                        </div>
-                        {/* </a> */}
+                        </a>
                     </figure>
                 </div>
                 <div className="project-card">
                     <figure>
                         <a style={{ textDecoration: "none", color: "inherit" }} target="_blank" href="http://demicapp.com">
-                            <img src={demic} alt="Screenshot of Demic app" />
+                            <img src={demic} alt="Screenshot of Demic web app with a phone displaying the user interface for the chat feature.
+                                Also features the text, Connect with classmates at University of Wisconsin-Madison" />
                             <div class="overlay">
                                 <div style={{ position: "relative" }}>
                                     <h4>Demic Web App</h4>
@@ -45,6 +48,19 @@ const Projects = () => {
                                 </div>
                             </div>
                         </a>
+                    </figure>
+                </div>
+                <div className="project-card">
+                    <figure>
+                        {/* <a style={{ textDecoration: "none", color: "inherit" }} target="_blank" href=""> */}
+                        <img src={financeApp} alt="Finance graphic showing a financial institution in the middle with other icons depicting things that are expenditures in life." />
+                        <div class="overlay">
+                            <div style={{ position: "relative" }}>
+                                <h4>(IN PROGRESS)<br />Finance Tracker App</h4>
+                                <p>A React app using Express and PostgreSQL to track financial spending and budgeting.</p>
+                            </div>
+                        </div>
+                        {/* </a> */}
                     </figure>
                 </div>
             </div>
