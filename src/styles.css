@@ -427,7 +427,7 @@ svg.slick-next:hover {
   line-height: 1.5;
 }
 
-.skills-resume a:visited {
+.resume-link a:visited {
   color: var(--dark-font-color);
 }
 

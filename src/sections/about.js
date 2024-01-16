@@ -27,18 +27,12 @@ const About = forwardRef((props, ref) => {
                 </Parallax>
                 <Parallax onEnter={() => handleIntroEnter()}>
                     <p className={`about-description ${showDevDesc ? "visible" : ""}`}>
-                        {/* I'm currently a software engineer working on a .NET web application at Collins Aerospace. I have experience with a variety of technologies ranging from software to hardware,
-                        but I enjoy web development the most.
-
-                        I'm a software engineer part of a dynamic team at Collins Aerospace. */}
-
                         As a software engineer at Collins Aerospace, my work revolves around developing and maintaining a dynamic .NET web application. I enjoy exploring all facets of technology,
                         from software to hardware, with my passions currently driving me deeper into the realm of web development.
                     </p>
                     <p className={`about-hobby ${showDevDesc ? "visible" : ""}`}><b>When I'm not coding... </b>I'm often rock climbing, running, skiing, rollerblading, and playing ultimate frisbee. Traveling
                         and exploring the world is one of my greatest excitements and I'm always eager to experience new corners of the globe. I also cherish connecting with others and listening to
                         the stories that have shaped them into who they are today.</p>
-                    {/* I also love traveling the world with a good book in hand. */}
                 </Parallax>
             </div>
         </div >
