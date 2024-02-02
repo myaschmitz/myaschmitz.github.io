@@ -1,6 +1,5 @@
 import { forwardRef } from "react";
 import "../index.css";
-import { useRef } from "react";
 import { useState } from 'react';
 import { Parallax } from 'react-scroll-parallax'
 import headshot from "../images/mya-sq-sm.jpg";
@@ -23,12 +22,12 @@ const About = forwardRef((props, ref) => {
             <div className="underline" style={{ background: 'var(--color-tertiary)' }}></div>
             <div className='section-about' >
                 <Parallax onEnter={() => handleAboutTitleEnter()}>
-                    <img src={headshot} alt="Photo of Mya Schmitz" className={`about-headshot ${showDevDesc ? "visible" : ""}`} />
+                    <img src={headshot} alt="Mya Schmitz" className={`about-headshot ${showDevDesc ? "visible" : ""}`} />
                 </Parallax>
                 <Parallax onEnter={() => handleIntroEnter()}>
                     <p className={`about-description ${showDevDesc ? "visible" : ""}`}>
                         As a software engineer at Collins Aerospace, my work revolves around developing and maintaining a dynamic .NET web application. I enjoy exploring all facets of technology,
-                        from software to hardware, with my passions currently driving me deeper into the realm of web development. Outside of my work, I enjoy exploring and implementing new 
+                        from software to hardware, with my passions currently driving me deeper into the realm of web development. Outside of my work, I love delving into and implementing new 
                         technologies in my personal coding projects.
                     </p>
                     <p className={`about-hobby ${showDevDesc ? "visible" : ""}`}><b>When I'm not coding... </b>I'm often rock climbing, running, skiing, rollerblading, and playing ultimate frisbee. Traveling

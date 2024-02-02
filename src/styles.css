@@ -420,6 +420,7 @@ svg.slick-next:hover {
 }
 
 .resume-link {
+  color: black;
   background: linear-gradient(90deg, var(--color-orange-accent), var(--color-orange-accent));
   background-position: 0.25em 0.7em;
   background-repeat: no-repeat;
