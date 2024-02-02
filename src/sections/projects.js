@@ -63,6 +63,19 @@ const Projects = () => {
                         {/* </a> */}
                     </figure>
                 </div>
+                <div className="project-card">
+                    <figure>
+                        {/* <a style={{ textDecoration: "none", color: "inherit" }} target="_blank" href=""> */}
+                        <img src={financeApp} alt="Finance graphic showing a financial institution in the middle with other icons depicting things that are expenditures in life." />
+                        <div class="overlay">
+                            <div style={{ position: "relative" }}>
+                                <h4>(IN PROGRESS)<br />Climbing Gym Database</h4>
+                                <p>An app to track climbing gyms using TypeScript, Svelte, SvelteKit, and Firebase.</p>
+                            </div>
+                        </div>
+                        {/* </a> */}
+                    </figure>
+                </div>
             </div>
 
             <br />
