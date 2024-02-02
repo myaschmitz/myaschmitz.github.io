@@ -1,8 +1,8 @@
 import solarSystem from "../images/solar-system-ss.jpg";
-import cpu1 from "../images/cpu-image.webp";
 import cpu from "../images/cpu-2.jpg";
 import demic from "../images/demic-ss.png";
 import financeApp from "../images/finance-app.png";
+import climbDb from "../images/climbdb.png";
 
 const Projects = () => {
     return (
@@ -12,7 +12,7 @@ const Projects = () => {
             <div className="project-grid">
                 <div className="project-card">
                     <figure>
-                        <a style={{ textDecoration: "none", color: "inherit" }} target="_blank" href="https://cs559-spring22.github.io/wbfinal-myaschmitz/for_students/final-grtown.html">
+                        <a style={{ textDecoration: "none", color: "inherit" }} target="_blank" rel="noreferrer" href="https://cs559-spring22.github.io/wbfinal-myaschmitz/for_students/final-grtown.html">
                             <img src={solarSystem} alt="Screenshot of the Solar System built using 3D graphics concepts and THREE.js elements." />
                             <div class="overlay">
                                 <div style={{ position: "relative" }}>
@@ -25,7 +25,7 @@ const Projects = () => {
                 </div>
                 <div className="project-card">
                     <figure>
-                        <a style={{ textDecoration: "none", color: "inherit" }} target="_blank" href="https://github.com/myaschmitz/project-pipelined">
+                        <a style={{ textDecoration: "none", color: "inherit" }} target="_blank" rel="noreferrer" href="https://github.com/myaschmitz/project-pipelined">
                             <img src={cpu} alt="Image of a CPU" />
                             <div class="overlay">
                                 <div style={{ position: "relative" }}>
@@ -38,7 +38,7 @@ const Projects = () => {
                 </div>
                 <div className="project-card">
                     <figure>
-                        <a style={{ textDecoration: "none", color: "inherit" }} target="_blank" href="http://demicapp.com">
+                        <a style={{ textDecoration: "none", color: "inherit" }} target="_blank" rel="noreferrer" href="http://demicapp.com">
                             <img src={demic} alt="Screenshot of Demic web app with a phone displaying the user interface for the chat feature.
                                 Also features the text, Connect with classmates at University of Wisconsin-Madison" />
                             <div class="overlay">
@@ -52,7 +52,7 @@ const Projects = () => {
                 </div>
                 <div className="project-card">
                     <figure>
-                        {/* <a style={{ textDecoration: "none", color: "inherit" }} target="_blank" href=""> */}
+                        {/* <a style={{ textDecoration: "none", color: "inherit" }} target="_blank" rel="noreferrer" href=""> */}
                         <img src={financeApp} alt="Finance graphic showing a financial institution in the middle with other icons depicting things that are expenditures in life." />
                         <div class="overlay">
                             <div style={{ position: "relative" }}>
@@ -65,8 +65,8 @@ const Projects = () => {
                 </div>
                 <div className="project-card">
                     <figure>
-                        {/* <a style={{ textDecoration: "none", color: "inherit" }} target="_blank" href=""> */}
-                        <img src={financeApp} alt="Finance graphic showing a financial institution in the middle with other icons depicting things that are expenditures in life." />
+                        {/* <a style={{ textDecoration: "none", color: "inherit" }} target="_blank" rel="noreferrer" href=""> */}
+                        <img src={climbDb} alt="Screenshot showing a climbing database map." />
                         <div class="overlay">
                             <div style={{ position: "relative" }}>
                                 <h4>(IN PROGRESS)<br />Climbing Gym Database</h4>
