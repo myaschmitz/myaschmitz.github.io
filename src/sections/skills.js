@@ -4,9 +4,9 @@ import resumePdf from "../files/mya-schmitz-resume.pdf";
 const Skills = () => {
     return (
         <div className='section-container' style={{ background: 'var(--color-light-orange-accent)' }}>
-            <h2 className={"section-header"}>MY SKILLS</h2>
+            <h2 className="section-header">MY SKILLS</h2>
             <div className='underline' style={{ background: 'var(--color-tertiary)' }}></div>
-            <div style={{ width: '80%', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', textAlign: 'center', gap: '6em' }}>
+            <div className='skills-container'>
                 <div>
                     <h3>Languages</h3>
                     <p>C, C#, Java, HTML/CSS, JavaScript, TypeScript, Python, Assembly, Verilog, MATLAB</p>
