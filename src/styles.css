@@ -44,7 +44,8 @@
 
 /* .center {} */
 
-.left {}
+.left {
+}
 
 /* #endregion General */
 
@@ -176,6 +177,11 @@
   vertical-align: middle;
   opacity: 0;
   transition: all 1.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.education-logo {
+  width: 8em;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 640px) {
@@ -320,7 +326,7 @@ svg.slick-next:hover {
 .dates {
   color: var(--color-extra-accent5);
   text-align: left;
-  padding: 0 0 5px 0
+  padding: 0 0 5px 0;
 }
 
 .job-descriptions {
@@ -334,7 +340,7 @@ svg.slick-next:hover {
 
 .job-title {
   font-weight: bold;
-  margin-right: 0.30em;
+  margin-right: 0.3em;
 }
 
 .company-name {
@@ -356,7 +362,6 @@ svg.slick-next:hover {
   margin: 0.5em 0;
   background: var(--color-extra-accent5);
 }
-
 
 @media screen and (min-width: 750px) {
   .timeline-format {
@@ -437,6 +442,7 @@ svg.slick-next:hover {
 .skills-resume {
   margin-top: 3em;
   text-align: center;
+  width: 80%;
 }
 
 .skills-resume a {
@@ -447,7 +453,11 @@ svg.slick-next:hover {
 
 .resume-link {
   color: black;
-  background: linear-gradient(90deg, var(--color-orange-accent), var(--color-orange-accent));
+  background: linear-gradient(
+    90deg,
+    var(--color-orange-accent),
+    var(--color-orange-accent)
+  );
   background-position: 0.25em 0.7em;
   background-repeat: no-repeat;
   padding-inline-end: 0.25em;
@@ -526,7 +536,7 @@ svg.slick-next:hover {
   width: 100%;
   transform: scale(1);
   opacity: 0;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   background-color: var(--color-tertiary);
   text-align: center;
   font-size: 2vh;
@@ -543,7 +553,7 @@ svg.slick-next:hover {
 }
 
 .overlay:hover {
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   opacity: 0.5;
 }
 
@@ -590,15 +600,16 @@ div.project-card figure:hover img {
   margin: 0 2em 1em 2em;
   text-decoration: none;
   color: var(--dark-font-color);
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 @media screen and (max-width: 460px) {
-  .social-styles {}
+  .social-styles {
+  }
 }
 
 .social-styles:hover {
-  transition: all .5s ease-in;
+  transition: all 0.5s ease-in;
   color: var(--light-font-color);
 }
 

@@ -44,7 +44,7 @@ const Projects = () => {
                             <div className="overlay">
                                 <div style={{ position: "relative" }}>
                                     <h4>Demic Web App</h4>
-                                    <p style={{ width: '95%', display: 'inline-block' }}>Designed using React to facilitate app discovery and offer user guidance.</p>
+                                    <p style={{ width: '95%', display: 'inline-block' }}>Mobile app designed using React Native to facilitate classmate connections.</p>
                                 </div>
                             </div>
                         </a>
