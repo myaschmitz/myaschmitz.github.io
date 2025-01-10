@@ -65,7 +65,7 @@ const Projects = () => {
                 </div>
                 <div className="project-card">
                     <figure>
-                        {/* <a style={{ textDecoration: "none", color: "inherit" }} target="_blank" rel="noreferrer" href=""> */}
+                        <a style={{ textDecoration: "none", color: "inherit" }} target="_blank" rel="noreferrer" href="https://climbdb.app/">
                         <img src={climbDb} alt="Screenshot showing a climbing database map." />
                         <div className="overlay">
                             <div style={{ position: "relative" }}>
@@ -73,7 +73,7 @@ const Projects = () => {
                                 <p style={{ width: '95%', display: 'inline-block' }}>An app to track climbing gyms using TypeScript, Svelte, SvelteKit, and Firebase.</p>
                             </div>
                         </div>
-                        {/* </a> */}
+                        </a>
                     </figure>
                 </div>
             </div>
