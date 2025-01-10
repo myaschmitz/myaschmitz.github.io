@@ -10,6 +10,7 @@ import Education from './education';
 import SocialLinks from '../components/SocialLinks';
 import Timeline from '../components/About/Timeline';
 import { useRef } from 'react';
+// import Hobbies from './hobbies';
 
 function Home() {
   const aboutRef = useRef(null);
@@ -23,6 +24,7 @@ function Home() {
       {/* <Resume id="resume" /> */}
       <Projects />
       <Education />
+      {/* <Hobbies /> */}
       <SocialLinks />
     </div>
   );

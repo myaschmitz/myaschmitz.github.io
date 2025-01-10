@@ -8,14 +8,19 @@ const Skills = () => {
             <div className='underline' style={{ background: 'var(--color-tertiary)' }}></div>
             <div className='skills-container'>
                 <div>
-                    <h3>Languages</h3>
+                    <h3>Programming Languages</h3>
                     <p>C#, Java, HTML/CSS, JavaScript, TypeScript, Python, SQL</p>
                 </div>
                 <div>
-                    <h3>Tools & Tech</h3>
-                    <p>Git, Azure DevOps, .NET Core, Entity Framework Core, Node.js,
-                        Express.js, Next.js, Svelte, SvelteKit, PostgreSQL, Firebase, React, 
+                    <h3>Technologies & Frameworks</h3>
+                    <p>.NET Core, Entity Framework Core, Node.js, Express.js, Next.js, Svelte, SvelteKit, React, 
                         Tailwind CSS
+                    </p>
+                </div>
+                <div>
+                    <h3>Tools & Platforms</h3>
+                    <p>Agile Methodology, Jira, Git, Azure DevOps, PostgreSQL, Firebase, Firestore, 
+                        Amazon CloudWatch
                     </p>
                 </div>
             </div>
