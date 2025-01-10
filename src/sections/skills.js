@@ -9,12 +9,13 @@ const Skills = () => {
             <div className='skills-container'>
                 <div>
                     <h3>Languages</h3>
-                    <p>C, C#, Java, HTML/CSS, JavaScript, TypeScript, Python, Assembly, Verilog, MATLAB</p>
+                    <p>C#, Java, HTML/CSS, JavaScript, TypeScript, Python, SQL</p>
                 </div>
                 <div>
                     <h3>Tools & Tech</h3>
                     <p>Git, Azure DevOps, .NET Core, Entity Framework Core, Node.js,
-                        Express.js, Svelte, SvelteKit, PostgreSQL, Prisma ORM, Firebase, React, Tailwind CSS
+                        Express.js, Next.js, Svelte, SvelteKit, PostgreSQL, Firebase, React, 
+                        Tailwind CSS
                     </p>
                 </div>
             </div>
