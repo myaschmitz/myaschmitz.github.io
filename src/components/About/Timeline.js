@@ -26,14 +26,15 @@ const Timeline = () => {
                     <div className="dates">August 2022 - Present</div>
                     <div className="job-descriptions">
                         <div className="job-subdescriptions">
-                            <span className="job-title">SOFTWARE ENGINEER I</span><span className="company-name">@<a className="company-name"  target="_blank" rel="noopener noreferrer" href="https://www.collinsaerospace.com/">Collins Aerospace</a></span>
+                            <span className="job-title">SOFTWARE ENGINEER II</span><span className="company-name">@<a className="company-name"  target="_blank" rel="noopener noreferrer" href="https://www.collinsaerospace.com/">Collins Aerospace</a></span>
                         </div>
                         <span className="separator">---</span>
                         <div>
-                            I currently maintain a .NET web application by identifying, troubleshooting, and resolving issues and bugs.
-                            With the growing website and expanding customer base, we needed to upgrade it to utilize .NET 6. I was a main contributor to these upgrades and 
-                            worked through 10+ pages and a few critical services to implement these changes. I'm also leading efforts for enhancements to an Amazon CloudWatch 
-                            dashboard and integrating its data into Splunk.
+                            In my current role, I manage multiple concurrent projects. For one of the projects, I'm enhancing a Python test suite for a Django application, focusing on 
+                            expanding test coverage and ensuring test independence and reliability.
+                            Another project centers around a .NET application where I serve multiple responsibilities. I've developed Amazon CloudWatch dashboards to track 20 essential 
+                            services, supporting continuous uptime monitoring and system health. I also help maintain Azure Pipelines configurations using YAML to automate the build 
+                            and deployment processes. Within this same .NET project, I'm upgrading and maintaining the application across multiple services and more than 20 pages.
                         </div>
                     </div>
                 </div>
@@ -45,9 +46,9 @@ const Timeline = () => {
                         </div>
                         <span className="separator">---</span>
                         <div>
-                            At my second internship with Collins, I developed a web application leveraging React and Flask to streamline customer workflows on a brand new project.
-                            Since the project was recently initiated, I helped create and refine an automated test suite with Robot framework for efficiently testing the code.
-                            On this team, we operated within an Agile framework, incorporating Scrum and Kanban along with Bitbucket and Git to handle code management and collaboration.
+                            During my second internship with Collins, I played a key role in a new project developing a web application using React and Flask to optimize customer workflows.
+                            As an early member on the project, I contributed to establishing the project's foundation by creating and enhancing an automated test suite using Robot framework.
+                            Our team followed Agile methodologies, implementing Scrum and Kanban practices, while using Bitbucket and Git to handle version control and team collaboration.
                         </div>
                     </div>
                 </div>
@@ -61,7 +62,7 @@ const Timeline = () => {
                         <div>
                             During my internship, I generated a more streamlined user experience of a widely used .NET web application through enhancing the design and functionality of 20+ pages.
                             I also contributed to refining the app for responsiveness across diverse browsers.
-                            To efficiently deliver these updates to the web application, my team worked within an Agile framework and used Git and Azure DevOps.
+                            To efficiently deliver these updates to the web application, my team worked within an Agile framework and used Git and Azure DevOps for code management and deployment.
                         </div>
                     </div>
                 </div>
