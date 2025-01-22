@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 import "../index.css";
 import { useState } from 'react';
 import { Parallax } from 'react-scroll-parallax'
-import headshot from "../images/mya-sq-sm.jpg";
+import headshot from "../images/mya-fullsize.jpg";
 
 const About = forwardRef((props, ref) => {
     const [showDevDesc, setShowDevDesc] = useState(false);
@@ -22,7 +22,7 @@ const About = forwardRef((props, ref) => {
             <div className="underline" style={{ background: 'var(--color-tertiary)' }}></div>
             <div className='section-about' >
                 <Parallax onEnter={() => handleAboutTitleEnter()}>
-                    <img src={headshot} alt="Mya Schmitz" className={`about-headshot ${showDevDesc ? "visible" : ""}`} />
+                    <img src={headshot} alt="Mya Schmitz" className={`about-headshot ${showIntroDesc ? "visible" : ""}`} />
                 </Parallax>
                 <Parallax onEnter={() => handleIntroEnter()}>
                     <p className={`about-description ${showDevDesc ? "visible" : ""}`}>
