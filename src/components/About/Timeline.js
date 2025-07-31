@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import 'react-icons/fa';
 import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
+import { workExperience } from "../../content";
 
 const Timeline = () => {
     // const settings = {
@@ -22,65 +23,20 @@ const Timeline = () => {
             <h2 className={"section-header"} style={{ color: 'var(--light-font-color)' }}>WORK EXPERIENCE</h2>
             <div className="underline" style={{ background: 'var(--color-brown-accent)', paddingBottom: '10px' }}></div>
             <div className="timeline-format">
-                <div className="column">
-                    <div className="dates">August 2022 - Present</div>
-                    <div className="job-descriptions">
-                        <div className="job-subdescriptions">
-                            <span className="job-title">SOFTWARE ENGINEER II</span><span className="company-name">@<a className="company-name"  target="_blank" rel="noopener noreferrer" href="https://www.collinsaerospace.com/">Collins Aerospace</a></span>
-                        </div>
-                        <span className="separator">---</span>
-                        <div>
-                            In my current role, I manage multiple concurrent projects. For one of the projects, I'm enhancing a Python test suite for a Django application, focusing on 
-                            expanding test coverage and ensuring test independence and reliability.
-                            Another project centers around a .NET application where I serve multiple responsibilities. I've developed Amazon CloudWatch dashboards to track 20 essential 
-                            services, supporting continuous uptime monitoring and system health. I also help maintain Azure Pipelines configurations using YAML to automate the build 
-                            and deployment processes. Within this same .NET project, I'm upgrading and maintaining the application across multiple services and more than 20 pages.
+                {workExperience.map((job, index) => (
+                    <div className="column" key={index}>
+                        <div className="dates">{job.dateRange}</div>
+                        <div className="job-descriptions">
+                            <div className="job-subdescriptions">
+                                <span className="job-title">{job.jobTitle}</span><span className="company-name">@<a className="company-name" target="_blank" rel="noopener noreferrer" href={job.companyUrl}>{job.company}</a></span>
+                            </div>
+                            <span className="separator">---</span>
+                            <div>
+                                {job.description}
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="column">
-                    <div className="dates">May 2021 - August 2022</div>
-                    <div className="job-descriptions">
-                        <div className="job-subdescriptions">
-                            <span className="job-title">SOFTWARE ENGINEER INTERN</span><span className="company-name">@<a className="company-name"  target="_blank" rel="noopener noreferrer" href="https://www.collinsaerospace.com/">Collins Aerospace</a></span>
-                        </div>
-                        <span className="separator">---</span>
-                        <div>
-                            During my second internship with Collins, I played a key role in a new project developing a web application using React and Flask to optimize customer workflows.
-                            As an early member on the project, I contributed to establishing the project's foundation by creating and enhancing an automated test suite using Robot framework.
-                            Our team followed Agile methodologies, implementing Scrum and Kanban practices, while using Bitbucket and Git to handle version control and team collaboration.
-                        </div>
-                    </div>
-                </div>
-                <div className="column">
-                    <div className="dates">May 2020 - August 2020</div>
-                    <div className="job-descriptions">
-                        <div className="job-subdescriptions">
-                            <span className="job-title">SOFTWARE ENGINEER INTERN</span><span className="company-name">@<a className="company-name"  target="_blank" rel="noopener noreferrer" href="https://www.collinsaerospace.com/">Collins Aerospace</a></span>
-                        </div>
-                        <span className="separator">---</span>
-                        <div>
-                            During my internship, I generated a more streamlined user experience of a widely used .NET web application through enhancing the design and functionality of 20+ pages.
-                            I also contributed to refining the app for responsiveness across diverse browsers.
-                            To efficiently deliver these updates to the web application, my team worked within an Agile framework and used Git and Azure DevOps for code management and deployment.
-                        </div>
-                    </div>
-                </div>
-                <div className="column">
-                    <div className="dates">May 2019 - August 2019</div>
-                    <div className="job-descriptions">
-                        <div className="job-subdescriptions">
-                            <span className="job-title">SOFTWARE ENGINEER INTERN</span><span className="company-name">@ <a className="company-name"  target="_blank" rel="noopener noreferrer" href="https://www.medtronic.com/">Medtronic</a></span>
-                        </div>
-                        <span className="separator">---</span>
-                        <div>
-                            At Medtronic, I helped upgrade a .NET web application to facilitate and streamline communication across 2000+ translation string files.
-                            I also revamped features to enable smooth user interactions with threaded comments using jQuery and AJAX requests.
-                            These updates brought forth a more intuitive, organized user interface and helped reduce a translations process time by 
-                            upwards of 40% from what it was originally.
-                        </div>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
 
