@@ -3,7 +3,6 @@ import '../styles.css';
 import '../index.css';
 import ParallaxBannerImage from '../components/ParallaxBannerImage';
 import About from './about';
-import Resume from './resume';
 import Skills from './skills';
 import Projects from './projects';
 import Education from './education';
