@@ -21,7 +21,7 @@ const Skills = () => {
                     <p>{skillsContent.toolsPlatforms}</p>
                 </div>
             </div>
-            <div className='skills-resume'>{skillsContent.resumeText} <a className='resume-link' href={resumePdf} target='_blank' rel="noreferrer">{skillsContent.resumeLinkText}</a> {skillsContent.resumeEndText}</div>
+            <div className='skills-resume'>{skillsContent.resumeText} <a className='resume-link' href="https://drive.google.com/file/d/1r2fMy5B16Ri29AJXlN9dhR20HGJFRUZf/view?usp=drive_link" target='_blank' rel="noreferrer">{skillsContent.resumeLinkText}</a> {skillsContent.resumeEndText}</div>
         </div>
     );
 };
