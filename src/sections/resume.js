@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import resumePdf from "../files/mya-schmitz-resume.pdf"
 
 const Resume = () => {
     // default to collapsed resume

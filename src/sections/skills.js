@@ -1,5 +1,4 @@
 import React from 'react';
-import resumePdf from "../files/mya-schmitz-resume.pdf";
 import { skillsContent } from "../content";
 
 const Skills = () => {
