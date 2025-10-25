@@ -8,7 +8,6 @@ import {
     // NavBtn,
     // NavBtnLink,
 } from "./NavbarElements";
-import resumePdf from '../../files/mya-schmitz-resume.pdf'
 
 const Navbar = () => {
     return (
