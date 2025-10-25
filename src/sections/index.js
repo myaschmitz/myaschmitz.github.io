@@ -21,7 +21,6 @@ function Home() {
       <About ref={aboutRef} />
       <Timeline />
       <Skills />
-      {/* <Resume id="resume" /> */}
       <Projects />
       <Education />
       {/* <Hobbies /> */}

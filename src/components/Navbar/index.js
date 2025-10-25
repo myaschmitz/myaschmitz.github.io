@@ -27,7 +27,7 @@ const Navbar = () => {
                         About
                     </NavLink>
                     <NavLink 
-                    to={resumePdf} target='_blank' 
+                    to="https://drive.google.com/file/d/1r2fMy5B16Ri29AJXlN9dhR20HGJFRUZf/view?usp=drive_link" target='_blank' 
                     >
                         Resume
                     </NavLink>
