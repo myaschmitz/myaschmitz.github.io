@@ -24,10 +24,6 @@ export default function ThemeToggle() {
     } else {
       document.documentElement.classList.remove('dark')
     }
-
-    // Force a check of the CSS variables
-    const bg = getComputedStyle(document.body).backgroundColor
-    const color = getComputedStyle(document.body).color
   }
 
   // Don't render anything until mounted to avoid hydration mismatch

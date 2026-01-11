@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Playfair_Display, Montserrat } from "next/font/google";
 import "./globals.css";
 import ThemeToggle from "@/components/ThemeToggle";
+import Images from "@/components/Images";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -50,6 +51,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${montserrat.variable} ${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} font-(family-name:--font-montserrat) antialiased`}
       >
+        <Images />
         <ThemeToggle />
         {children}
       </body>
