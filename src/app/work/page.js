@@ -10,7 +10,7 @@ export default function Work() {
         <div className="grid grid-cols-2 gap-8">
           <div className="text-right flex flex-col justify-end">
             <h2 className="text-4xl font-semibold">WORK</h2>
-            <div><a href="https://drive.google.com/file/d/1r2fMy5B16Ri29AJXlN9dhR20HGJFRUZf/view?usp=sharing" target="_blank" className="hover:underline">resumé</a></div>
+            <div>view my <a href="https://drive.google.com/file/d/1r2fMy5B16Ri29AJXlN9dhR20HGJFRUZf/view?usp=sharing" target="_blank" className="hover:underline">resumé</a></div>
           </div>
           <div className="text-left text-lg font-[--font-playfair-display]">
             <div className="mb-4">
