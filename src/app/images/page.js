@@ -178,7 +178,7 @@ export default function Images() {
                             href={`https://www.flickr.com/photos/${USER_ID}/${photo.id}`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block relative group shrink-0"
+                            className="block relative group shrink-0 transition-bg"
                             style={{ width: `${width}px`, height: `${row.height}px` }}
                           >
                             <Image
@@ -186,7 +186,7 @@ export default function Images() {
                               alt={photo.title || 'Flickr photo'}
                               width={photo.width_c || 800}
                               height={photo.height_c || 600}
-                              className="w-full h-full object-cover shadow-lg group-hover:shadow-xl transition-shadow"
+                              className="w-full h-full object-cover shadow-gray-400 dark:shadow-gray-700 group-hover:shadow-lg group-hover:shadow-gray-400 dark:group-hover:shadow-gray-700 transition-shadow duration-300"
                               quality={85}
                             />
                           </a>
