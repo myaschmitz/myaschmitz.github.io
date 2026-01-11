@@ -78,7 +78,7 @@ export default function Images() {
     if (photos.length === 0) return;
 
     const calculateLayout = () => {
-      const TARGET_HEIGHT = 200; // Target row height in pixels
+      const TARGET_HEIGHT = 250; // Target row height in pixels
       const GAP = 8; // Gap between photos
 
       // Get the actual container width from the ref
