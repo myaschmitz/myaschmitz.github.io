@@ -1,18 +1,48 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/forms";
+
+@theme {
+  --color-scheme: light dark;
+}
+
+@variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #e1ebeb;
+  --color-cape-cod-50: #f5f8f7;
+  --color-cape-cod-100: #e0e7e7;
+  --color-cape-cod-200: #c0cfcd;
+  --color-cape-cod-300: #98b0ae;
+  --color-cape-cod-400: #738e8d;
+  --color-cape-cod-500: #587473;
+  --color-cape-cod-600: #455c5c;
+  --color-cape-cod-700: #3a4b4b;
+  --color-cape-cod-800: #313e3e;
+  --color-cape-cod-900: #2c3435;
+  --color-cape-cod-950: #161c1d;
+
+  --background: var(--color-cape-cod-100);
   --foreground: #171717;
 }
 
 html.dark {
-  --background: #272b2b;
+  --background: var(--color-cape-cod-950);
   --foreground: #ededed;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-cape-cod-50: #f5f8f7;
+  --color-cape-cod-100: #e0e7e7;
+  --color-cape-cod-200: #c0cfcd;
+  --color-cape-cod-300: #98b0ae;
+  --color-cape-cod-400: #738e8d;
+  --color-cape-cod-500: #587473;
+  --color-cape-cod-600: #455c5c;
+  --color-cape-cod-700: #3a4b4b;
+  --color-cape-cod-800: #313e3e;
+  --color-cape-cod-900: #2c3435;
+  --color-cape-cod-950: #161c1d;
   --font-sans: var(--font-montserrat);
   --font-mono: var(--font-geist-mono);
 }
@@ -21,4 +51,28 @@ body {
   background-color: var(--background);
   color: var(--foreground);
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.form-input,
+.form-textarea {
+  background-color: var(--color-cape-cod-200);
+  color: var(--foreground);
+}
+
+html.dark .form-input,
+html.dark .form-textarea {
+  background-color: var(--color-cape-cod-900);
+  color: var(--foreground);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  background-color: var(--color-cape-cod-100);
+  border-color: var(--color-cape-cod-500);
+}
+
+html.dark .form-input:focus,
+html.dark .form-textarea:focus {
+  background-color: var(--color-cape-cod-800);
+  border-color: var(--color-cape-cod-500);
 }
