@@ -2,7 +2,8 @@
 
 import { useEffect, useState, useRef } from 'react';
 import Image from 'next/image';
-import Navigation from "@/components/Navigation";
+import Link from "next/link";
+import { HomeIcon } from "@heroicons/react/24/outline";
 
 const API_KEY = '66c7d097379068cd35472e7cb5b25126';
 const USER_ID = '197895414@N06';
@@ -150,8 +151,13 @@ export default function Images() {
 
   return (
     <div className="min-h-screen p-8">
-      <div>
+      {/* <div>
         <Navigation />
+      </div> */}
+      <div className="flex justify-center items-center">
+        <Link href="/" className="p-2 rounded" suppressHydrationWarning>
+          <HomeIcon className="h-6 w-6" suppressHydrationWarning />
+        </Link>
       </div>
       <div className="min-h-screen flex items-center justify-center">
         <div className="">
@@ -161,10 +167,10 @@ export default function Images() {
             {!loading && !error && photos.length === 0 && <p>No photos found.</p>}
             {!loading && !error && justifiedRows.length > 0 && (
               <div>
-                <hr className="mt-4 mb-2 m-auto w-xs" />
+                <hr className="mt-4 mb-2 m-auto w-3xs" />
                 {/* other ideas: through the lens, a visual collection, what i see, "light, shadow, and everything between", visual notes, "the world, observed" */}
                 <div className="text-center mb-2">frames from life</div>
-                <hr className="mb-6 m-auto w-xs" />
+                <hr className="mb-6 m-auto w-3xs" />
                 <div ref={containerRef} className="flex flex-col gap-2 w-full">
                   {justifiedRows.map((row, rowIndex) => (
                     <div key={rowIndex} className="flex gap-2 justify-start" style={{ height: `${row.height}px` }}>
