@@ -7,7 +7,7 @@ export default function Work() {
         <Navigation />
       </div>
       <div className="min-h-screen flex items-center justify-center">
-        <div className="max-w-4xl mx-auto w-full">
+        <div className="max-w-3xl mx-auto w-full">
           <div className="grid grid-cols-2 gap-8">
           <div className="text-right flex flex-col justify-start">
             <h2 className="text-4xl font-semibold">WORK</h2>
@@ -15,19 +15,23 @@ export default function Work() {
           </div>
           <div className="text-left text-lg font-[--font-playfair-display]">
             <div className="mb-4">
-                <div className="mb-0 text-2xl">software engineer ii <span className="text-base">@ <a href="https://www.collinsaerospace.com" target="_blank" className="hover:underline">Collins Aerospace</a></span></div>
+                <div className="mb-0 text-2xl font-bold">software engineer ii</div>
+                <div className="text-base">// <a href="https://www.collinsaerospace.com" target="_blank" className="hover:underline">Collins Aerospace</a></div>
                 <div className="ml-4">august 2022 - present</div>
             </div>
             <div className="mb-4">
-                <div className="mb-0 text-2xl">software engineer intern <span className="text-base">@ <a href="https://www.collinsaerospace.com" target="_blank" className="hover:underline">Collins Aerospace</a></span></div>
+                <div className="mb-0 text-2xl font-bold">software engineer intern</div>
+                <div className="text-base">// <a href="https://www.collinsaerospace.com" target="_blank" className="hover:underline">Collins Aerospace</a></div>
                 <div className="ml-4">may 2021 - august 2022</div>
             </div>
             <div className="mb-4">
-                <div className="mb-0 text-2xl">software engineer intern <span className="text-base">@ <a href="https://www.collinsaerospace.com" target="_blank" className="hover:underline">Collins Aerospace</a></span></div>
+                <div className="mb-0 text-2xl font-bold">software engineer intern</div>
+                <div className="text-base">// <a href="https://www.collinsaerospace.com" target="_blank" className="hover:underline">Collins Aerospace</a></div>
                 <div className="ml-4">may 2020 - august 2020</div>
             </div>
             <div className="mb-0">
-                <div className="mb-0 text-2xl">software engineer intern <span className="text-base">@ <a href="https://www.medtronic.com" target="_blank" className="hover:underline">Medtronic</a></span></div>
+                <div className="mb-0 text-2xl font-bold">software engineer intern</div>
+                <div className="text-base">// <a href="https://www.medtronic.com" target="_blank" className="hover:underline">Medtronic</a></div>
                 <div className="ml-4">may 2019 - august 2019</div>
             </div>
           </div>

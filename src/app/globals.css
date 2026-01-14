@@ -24,6 +24,10 @@
   --foreground: #171717;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 html.dark {
   --background: var(--color-cape-cod-950);
   --foreground: #ededed;
@@ -48,9 +52,49 @@ html.dark {
 }
 
 body {
-  background-color: var(--background);
+  position: relative;
   color: var(--foreground);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    100deg,
+    #c0cfcd 0%,
+    #c0cfcd 22%,
+    #c8d5d3 22%,
+    #c8d5d3 24%,
+    #d0dbd9 24%,
+    #d0dbd9 26%,
+    #d8e1df 26%,
+    #d8e1df 28%,
+    #e0e7e7 28%,
+    #e0e7e7 100%
+  );
+  z-index: -1;
+  transition: background 0.3s ease;
+}
+
+html.dark body::before {
+  background: linear-gradient(
+    100deg,
+    #161c1d 0%,
+    #161c1d 22%,
+    #1a2021 22%,
+    #1a2021 24%,
+    #1d2425 24%,
+    #1d2425 26%,
+    #202829 26%,
+    #202829 28%,
+    #242c2d 28%,
+    #242c2d 100%
+  );
 }
 
 .form-input,
