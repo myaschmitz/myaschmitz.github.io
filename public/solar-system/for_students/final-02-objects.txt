@@ -1,0 +1,33 @@
+(Required) Two kinds of objects created for this assignment:
+1. Space Shuttle-1* - a space shuttle loaded from a GLTF file that randomly chooses planets to fly to
+2. Asteroid-958* - asteroid with custom shaders that exist in a belt
+
+(Required) Five other kinds of objects that you created (possibly in previous assignments):
+3. Sun* - the sun in our solar system made with custom shaders
+4. Moon* - the moon as a textured sphere with various defined maps
+5. Mercury* - Mercury as a textured sphere with various defined maps
+6. Venus - Venus as a textured sphere with various defined maps
+7. Earth* - Earth as a textured sphere with various defined maps
+
+(Optional) Backup Objects (more objects that you created, in case the ones above don't count):
+- Mars - Mars as a textured sphere with various defined maps
+- Jupiter* - Jupiter as a textured sphere with various defined maps
+- Saturn - Saturn as a textured sphere with various defined maps
+- Uranus (kind of far away, need to look closer to see it better) - Uranus as a textured sphere with various defined maps
+- Neptune (kind of far away, need to look closer to see it better) - Neptune as a textured sphere with various defined maps
+- Pluto (kind of far away, need to look closer to see it better) - Pluto as a textured sphere with various defined maps
+- Space Station* - a space station orbiting around Earth loaded from a GLTF file
+
+At least one of each type of object:
+Building/structure: Space Station* - a space station structure rotating around Earth
+Vehicle: Space Shuttle-1* - a space shuttle randomly traveling from planet to planet)
+Natural Element: Earth* - Earth orbiting around the sun
+
+Object loaded from a model file:
+Model: Space Station* - a space station loaded from an FBX file 
+
+An object with a shader that you wrote:
+ShaderObj: Sun* - created using a custom animated shader
+
+Other Objects that you would like to note:
+- All of the other asteroids that were created procedurally.

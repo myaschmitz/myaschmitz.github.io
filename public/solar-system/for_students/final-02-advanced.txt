@@ -1,0 +1,19 @@
+Advanced Thing: Animated Shader Effect (#5)
+Example: LookAt: Sun
+The sun has an animated shader to simulate all the fire and gas moving around on it.
+
+Advanced Thing: Use Noise (#12)
+Example: LookAt: Sun
+The sun shader is using noise to generate the changing vertices on its surface.
+
+Advanced Thing: Procedurally generated geometry (#11)
+Example: LookAt: Asteroid-958
+There are NUM_ASTEROIDS asteroids that are procedurally and randomly generated (including their positions).
+
+Advanced Thing: Use Noise (#12)
+Example: Drive: Asteroid-958
+The shape of the asteroids are procedurally and randomly generated using a noise function, so they are all different.
+
+Advanced Thing: Complex Behavior (#2)
+Example: Drive: Space Shuttle-1
+The space shuttle is randomly choosing a planet to go it. It will choose the planet, fly to it by taking the vector of the direction it's facing and continually adding that to the position until it reaches the planet (within a certain margin). Then, it will randomly choose another planet to go to, and it will continue this behavior.

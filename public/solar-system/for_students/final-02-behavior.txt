@@ -1,0 +1,18 @@
+Three different behaviors that you made:
+1. Earth rotating around the sun.
+2. Moon rotating around Earth (articulated, since earth is also spinning around sun).
+3. Space shuttle following around different random planets.
+
+One behavior that is not simple:
+Not simple: Space shuttle randomly picking a planet to go to, then randomly picking a new planet to go to once it's within a specific range of the first planet, and repeating that process.
+
+Animated Articulated Figure:
+Articulated: Earth is rotating around the sun and the moon is rotating around Earth. The articulated motion is because Earth is moving relative to the sun and then the moon is moving relative to Earth.
+
+Other Behaviors that you made: (backup in case something above doesn't count)
+- Also made each of the planets and the sun spinning on their axis.
+- The asteroids were created procedurally. They are orbiting around the sun, but the rotations had to take into account/calculated utilizing the positions of each individual asteroid.
+
+A few quick notes:
+- I updated the animate() function in GrWorld to allow for things to spin by updating the time instead of it being hardcoded at 12.
+- Some of the planets (namely Neptune and Pluto) are rather far away, so they are more difficult to see. You will have to drive them to see them better.
