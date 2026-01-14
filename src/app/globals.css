@@ -22,6 +22,7 @@
 
   --background: var(--color-cape-cod-100);
   --foreground: #171717;
+  --link-color: #a86040;
 }
 
 html {
@@ -31,11 +32,13 @@ html {
 html.dark {
   --background: var(--color-cape-cod-950);
   --foreground: #ededed;
+  --link-color: #e8a882;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-link: var(--link-color);
   --color-cape-cod-50: #f5f8f7;
   --color-cape-cod-100: #e0e7e7;
   --color-cape-cod-200: #c0cfcd;
@@ -119,4 +122,8 @@ html.dark .form-input:focus,
 html.dark .form-textarea:focus {
   background-color: var(--color-cape-cod-800);
   border-color: var(--color-cape-cod-500);
+}
+
+.text-link {
+  color: var(--link-color);
 }
