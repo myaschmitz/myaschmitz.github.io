@@ -9,6 +9,15 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/solar-system',
+        destination: '/solar-system/index.html',
+        permanent: false,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

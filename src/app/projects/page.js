@@ -22,7 +22,7 @@ export default function Projects() {
               <div>recipe database for home cooks to organize their favorite recipes.</div>
             </div>
             <div className="mb-0">
-              <div className="font-bold underline">solar system</div>
+              <div className="font-bold underline"><a href="/solar-system" target="_blank" rel="noopener noreferrer">solar system</a></div>
               <div>3d solar system simulation built using three.js.</div>
             </div>
           </div>
