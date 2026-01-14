@@ -68,7 +68,7 @@ body::before {
   width: 100vw;
   height: 100vh;
   background: linear-gradient(
-    100deg,
+    109deg,
     #c0cfcd 0%,
     #c0cfcd 22%,
     #c8d5d3 22%,
@@ -86,7 +86,7 @@ body::before {
 
 html.dark body::before {
   background: linear-gradient(
-    100deg,
+    109deg,
     #161c1d 0%,
     #161c1d 22%,
     #1a2021 22%,

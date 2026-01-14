@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation'
+import { CodeBracketIcon, CodeBracketSquareIcon } from "@heroicons/react/24/outline"
 
 export default function Projects() {
   return (
@@ -6,26 +7,33 @@ export default function Projects() {
       <div>
         <Navigation />
       </div>
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="max-w-3xl mx-auto w-full">
-          <div className="grid grid-cols-2 gap-8">
-          <div className="text-right flex flex-col justify-start">
-            <h2 className="text-4xl font-semibold">PROJECTS</h2>
+      <div className="mt-8">
+        <div className="max-w-xl mx-auto w-full">
+          <div className="mb-6">
+            <h2 className="text-4xl font-semibold mb-2">PROJECTS</h2>
           </div>
-          <div className="text-left text-lg font-[--font-playfair-display]">
+          <div className="text-lg">
             <div className="mb-4">
-              <div className="font-bold underline"><a href="https://climbdb.app" target="_blank" rel="noopener noreferrer">climbdb</a></div>
-              <div>community-powered database for climbing gyms across the globe.</div>
+              <p className="text-xl">// <a href="https://climbdb.app" target="_blank" rel="noopener noreferrer" className="text-link font-bold hover:underline">climbdb</a></p>
+              <div className="font-[--font-playfair-display]">
+                <p className="text-base font-bold text-cape-cod-800 dark:text-cape-cod-200">SvelteKit, Firebase</p>
+                <p>community-powered database for climbing gyms across the globe.</p>
+              </div>
             </div>
             <div className="mb-4">
-              <div className="font-bold underline">recipehub</div>
-              <div>recipe database for home cooks to organize their favorite recipes.</div>
+              <p className="text-xl">// <span className="font-bold">recipehub</span></p>
+              <div className="font-[--font-playfair-display]">
+                <p className="text-base font-bold text-cape-cod-800 dark:text-cape-cod-200">Next.js, Supabase</p>
+                <p>recipe database for home cooks to organize their favorite recipes.</p>
+              </div>
             </div>
             <div className="mb-0">
-              <div className="font-bold underline"><a href="/solar-system" target="_blank" rel="noopener noreferrer">solar system</a></div>
-              <div>3d solar system simulation built using three.js.</div>
+              <p className="text-xl flex flex-row gap-2 align-bottom">// <a href="/solar-system" target="_blank" rel="noopener noreferrer" className="text-link font-bold hover:underline">solar system</a><a href="https://github.com/myaschmitz/cs559-wbfinal-myaschmitz" target="_blank" className="hover:cursor-pointer"><CodeBracketSquareIcon className="h-7 w-7" /></a></p>
+              <div className="font-[--font-playfair-display]">
+                <p className="text-base font-bold text-cape-cod-800 dark:text-cape-cod-200">Three.js</p>
+                <p>3d solar system simulation</p>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>

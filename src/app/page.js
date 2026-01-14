@@ -5,7 +5,7 @@ export default function Home() {
     <div className="min-h-screen p-8 flex items-center justify-center">
       <div className="grid grid-cols-2 gap-8">
         <div className="text-right flex flex-col justify-end">
-          <h2 className="text-xl md:text-4xl sm:text-3xl font-semibold">MYA SCHMITZ</h2>
+          <h2 className="text-xl sm:text-4xl font-semibold">MYA SCHMITZ</h2>
           <p className="text-sm md:text-xl sm:text-lg">Software Engineer.</p>
         </div>
 

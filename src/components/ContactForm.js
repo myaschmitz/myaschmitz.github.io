@@ -16,7 +16,7 @@ export default function ContactForm() {
 
     const data = await response.json();
     if (data.success) {
-      setResult("Success!");
+      setResult("success! i will get back to you as soon as possible.");
       event.target.reset();
     } else {
       setResult("Error");
@@ -24,20 +24,20 @@ export default function ContactForm() {
   };
   
   return (
-    <div>
-      <div className="font-bold text-xl mb-2">contact me</div>
-      <form onSubmit={onSubmit} className="flex flex-col align-middle gap-4">
-        <div className="flex flex-row gap-2 items-center">
+    <div className="text-xl">
+      <p className="mb-4 text-2xl">// <span className="font-bold">contact me</span></p>
+      <form onSubmit={onSubmit} className="flex flex-col align-middle gap-4 font-[--font-playfair-display]">
+        <div className="flex flex-row gap-4 items-center">
           <label htmlFor="name">name</label>
-          <input type="text" name="name" className="form-input rounded-md border-transparent focus:ring-0" required/>
+          <input type="text" name="name" className="form-input rounded-md border-transparent focus:ring-0 w-48 sm:w-64 md:w-80 lg:w-96" required/>
         </div>
-        <div className="flex flex-row gap-2 items-center">
+        <div className="flex flex-row gap-4 items-center">
           <label htmlFor="name">email</label>
-          <input type="text" name="email" className="form-input rounded-md border-transparent focus:ring-0" required/>
+          <input type="text" name="email" className="form-input rounded-md border-transparent focus:ring-0 w-48 sm:w-64 md:w-80 lg:w-96" required/>
         </div>
-        <div className="flex flex-row gap-2 items-start">
+        <div className="flex flex-row gap-4 items-start">
           <label htmlFor="message">message</label>
-          <textarea name="message" rows={4} className="form-textarea rounded-md border-transparent focus:ring-0" required></textarea>
+          <textarea name="message" rows={4} className="form-textarea rounded-md border-transparent focus:ring-0 w-48 sm:w-64 md:w-80 lg:w-96" required></textarea>
         </div>
         <button type="submit" className="rounded-md px-4 py-2 dark:bg-cape-cod-900 hover:bg-cape-cod-300 dark:hover:bg-cape-cod-800 bg-cape-cod-200 transition-colors cursor-pointer w-min">submit</button>
         <p>{result}</p>
