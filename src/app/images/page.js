@@ -151,9 +151,6 @@ export default function Images() {
 
   return (
     <div className="min-h-screen px-4 py-8 sm:px-8 overflow-x-hidden">
-      {/* <div>
-        <Navigation />
-      </div> */}
       <div className="flex justify-center items-center">
         <Link href="/" className="p-2 rounded" suppressHydrationWarning>
           <HomeIcon className="h-6 w-6" suppressHydrationWarning />

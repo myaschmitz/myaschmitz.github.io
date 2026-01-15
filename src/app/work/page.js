@@ -15,30 +15,30 @@ export default function Work() {
           <div className="">
             <div className="mb-4">
                 <div className="mb-0 text-xl font-bold">Software Engineer II</div>
+                <div className="text-sm"><a href="https://www.collinsaerospace.com" target="_blank" className="text-link font-bold">Collins Aerospace</a></div>
                 <div className="font-[--font-playfair-display]">
-                  <div className=""><a href="https://www.collinsaerospace.com" target="_blank" className="text-link font-bold">Collins Aerospace</a></div>
-                  <div className="ml-4">August 2022 - Present</div>
+                  <p className="ml-4">August 2022 - Present</p>
                 </div>
             </div>
             <div className="mb-4">
                 <div className="mb-0 text-xl font-bold">Software Engineer Intern</div>
+                <div className="text-sm"><a href="https://www.collinsaerospace.com" target="_blank" className="text-link font-bold">Collins Aerospace</a></div>
                 <div className="font-[--font-playfair-display]">
-                  <div className=""><a href="https://www.collinsaerospace.com" target="_blank" className="text-link font-bold">Collins Aerospace</a></div>
-                  <div className="ml-4">May 2021 - August 2022</div>
+                  <p className="ml-4">May 2021 - August 2022</p>
                 </div>
             </div>
             <div className="mb-4">
                 <div className="mb-0 text-xl font-bold">Software Engineer Intern</div>
+                <div className="text-sm"><a href="https://www.collinsaerospace.com" target="_blank" className="text-link font-bold">Collins Aerospace</a></div>
                 <div className="font-[--font-playfair-display]">
-                  <div className=""><a href="https://www.collinsaerospace.com" target="_blank" className="text-link font-bold">Collins Aerospace</a></div>
-                  <div className="ml-4">May 2020 - August 2020</div>
+                  <p className="ml-4">May 2020 - August 2020</p>
                 </div>
             </div>
             <div className="mb-0">
                 <div className="mb-0 text-xl font-bold">Software Engineer Intern</div>
+                <div className="text-sm"><a href="https://www.medtronic.com" target="_blank" className="text-link font-bold">Medtronic</a></div>
                 <div className="font-[--font-playfair-display]">
-                  <div className=""><a href="https://www.medtronic.com" target="_blank" className="text-link font-bold">Medtronic</a></div>
-                  <div className="ml-4">May 2019 - August 2019</div>
+                  <p className="ml-4">May 2019 - August 2019</p>
                 </div>
             </div>
           </div>

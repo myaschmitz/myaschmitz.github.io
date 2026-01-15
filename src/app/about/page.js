@@ -23,15 +23,15 @@ export default function About () {
                     <div>
                       <h2 className="text-2xl font-bold">Education</h2>
                       <div>
+                        <a href="https://www.wisc.edu/" target="_blank" className="text-link font-bold">University of Wisconsin - Madison</a>
                         <div className="font-[--font-playfair-display] mb-2">
-                          <a href="https://www.wisc.edu/" target="_blank" className="text-link">University of Wisconsin - Madison</a>
                           <p className="text-base text-cape-cod-800 dark:text-cape-cod-200">2018 - 2022</p>
                           <p className="">B.S. Computer Engineering and Computer Science</p>
                           <p className="">French Certificate</p>
                         </div>
                         <div>
                           <p className="text-base font-bold">Relevant coursework</p>
-                          <p className="font-[--font-playfair-display] text-base">Algorithms, Data Structures, Operating Systems, Computer Architecture, Artificial Intelligence</p>
+                          <p className="font-[--font-playfair-display]">Algorithms, Data Structures, Operating Systems, Computer Architecture, Artificial Intelligence</p>
                         </div>
                       </div>
                     </div>
