@@ -2,15 +2,15 @@ import Navigation from "@/components/Navigation"
 
 export default function About () {
     return (
-        <div className="min-h-screen p-8">
+        <div className="min-h-screen p-8 page-content">
               <div>
                 <Navigation />
               </div>
-              <div className="mt-8">
+              <div className="mt-2 md:mt-8">
                 <div className="max-w-xl mx-auto w-full">
                   <div className="mb-4">
                     <h2 className="text-4xl font-semibold mb-2">ABOUT</h2>
-                    <p>you can <a href="https://drive.google.com/file/d/1r2fMy5B16Ri29AJXlN9dhR20HGJFRUZf/view?usp=sharing" target="_blank" className="text-link font-bold hover:underline">find my resumé here</a></p>
+                    <p className="page-header">you can <a href="https://drive.google.com/file/d/1r2fMy5B16Ri29AJXlN9dhR20HGJFRUZf/view?usp=sharing" target="_blank" className="text-link font-bold hover:underline">find my resumé here</a></p>
                   </div>
                   <div className="text-lg">
                     <div className="font-[--font-playfair-display]">

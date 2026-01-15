@@ -2,11 +2,11 @@ import Navigation from '@/components/Navigation'
 
 export default function Work() {
   return (
-    <div className="min-h-screen p-8">
+    <div className="min-h-screen p-8 page-content">
       <div className="max-w-4xl mx-auto">
         <Navigation />
       </div>
-      <div className="mt-8">
+      <div className="mt-2 md:mt-8">
         <div className="max-w-xl mx-auto w-full">
           <div className="mb-6">
             <h2 className="text-4xl font-semibold mb-2">WORK</h2>

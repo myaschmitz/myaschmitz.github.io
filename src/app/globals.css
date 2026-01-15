@@ -127,3 +127,28 @@ html.dark .form-textarea:focus {
 .text-link {
   color: var(--link-color);
 }
+
+/* Mobile nav animation */
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-down {
+  animation: slide-down 0.3s ease-out;
+}
+
+/* On very narrow screens, add right padding to prevent content overlapping hamburger */
+@media (max-width: 767px) {
+  .page-content {
+    padding-right: 4rem;
+  }
+
+  .page-header {
+    padding-right: 1rem;
+  }
+}

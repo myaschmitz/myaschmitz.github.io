@@ -16,7 +16,7 @@ export default function Images() {
   }
   
   return (
-    <a href="/images" className="fixed top-8 left-8 p-2 rounded-lg hover:cursor-pointer z-50">
+    <a href="/images" className="hidden md:block fixed top-8 left-8 p-2 rounded-lg hover:cursor-pointer z-50">
     	<CameraIcon className="w-6 h-6" />
     </a>
   )
