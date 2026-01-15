@@ -169,7 +169,7 @@ export default function Images() {
               <div>
                 <hr className="mt-4 mb-2 m-auto w-3xs" />
                 {/* other ideas: through the lens, a visual collection, what i see, "light, shadow, and everything between", visual notes, "the world, observed" */}
-                <div className="text-center mb-2">frames from life</div>
+                <div className="text-center mb-2">Frames From Life</div>
                 <hr className="mb-6 m-auto w-3xs" />
                 <div ref={containerRef} className="flex flex-col gap-2 w-full">
                   {justifiedRows.map((row, rowIndex) => (

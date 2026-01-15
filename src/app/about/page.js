@@ -8,9 +8,9 @@ export default function About () {
               </div>
               <div className="mt-2 md:mt-8">
                 <div className="max-w-xl mx-auto w-full">
-                  <div className="mb-4">
+                  <div className="mb-2">
                     <h2 className="text-4xl font-semibold mb-2">ABOUT</h2>
-                    <p className="page-header">you can <a href="https://drive.google.com/file/d/1r2fMy5B16Ri29AJXlN9dhR20HGJFRUZf/view?usp=sharing" target="_blank" className="text-link font-bold hover:underline">find my resumé here</a></p>
+                    <p className="page-header">You can <a href="https://drive.google.com/file/d/1r2fMy5B16Ri29AJXlN9dhR20HGJFRUZf/view?usp=sharing" target="_blank" className="text-link font-bold">find my resumé here</a></p>
                   </div>
                   <div className="text-lg">
                     <div className="font-[--font-playfair-display]">
@@ -21,13 +21,18 @@ export default function About () {
                       </div>
                     </div>
                     <div>
-                      <h2 className="text-2xl">// <span className="font-bold">education</span></h2>
-                      <div className="font-[--font-playfair-display]">
-                        <p>university of wisconsin - madison</p>
-                        <p className="text-base ml-4">2018 - 2022</p>
-                        <p className="">B.S. computer engineering</p>
-                        <p className="">B.S. computer science</p>
-                        <p className="">French certificate</p>
+                      <h2 className="text-2xl font-bold">Education</h2>
+                      <div>
+                        <div className="font-[--font-playfair-display] mb-2">
+                          <a href="https://www.wisc.edu/" target="_blank" className="text-link">University of Wisconsin - Madison</a>
+                          <p className="text-base text-cape-cod-800 dark:text-cape-cod-200">2018 - 2022</p>
+                          <p className="">B.S. Computer Engineering and Computer Science</p>
+                          <p className="">French Certificate</p>
+                        </div>
+                        <div>
+                          <p className="text-base font-bold">Relevant coursework</p>
+                          <p className="font-[--font-playfair-display] text-base">Algorithms, Data Structures, Operating Systems, Computer Architecture, Artificial Intelligence</p>
+                        </div>
                       </div>
                     </div>
                   </div>
