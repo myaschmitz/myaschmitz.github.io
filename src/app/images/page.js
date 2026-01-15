@@ -150,7 +150,7 @@ export default function Images() {
   }, [photos]);
 
   return (
-    <div className="min-h-screen p-8">
+    <div className="min-h-screen px-4 py-8 sm:px-8 overflow-x-hidden">
       {/* <div>
         <Navigation />
       </div> */}
@@ -160,7 +160,7 @@ export default function Images() {
         </Link>
       </div>
       <div className="min-h-screen flex items-center justify-center">
-        <div className="">
+        <div ref={containerRef} className="w-full max-w-4xl">
           <div className="mt-4 text-lg font-[--font-playfair-display]">
             {loading && <p className="text-center">Loading photos...</p>}
             {error && <p className="text-red-500">Error: {error}</p>}
@@ -171,7 +171,7 @@ export default function Images() {
                 {/* other ideas: through the lens, a visual collection, what i see, "light, shadow, and everything between", visual notes, "the world, observed" */}
                 <div className="text-center mb-2">frames from life</div>
                 <hr className="mb-6 m-auto w-3xs" />
-                <div ref={containerRef} className="flex flex-col gap-2 w-full">
+                <div className="flex flex-col gap-2">
                   {justifiedRows.map((row, rowIndex) => (
                     <div key={rowIndex} className="flex gap-2 justify-start" style={{ height: `${row.height}px` }}>
                       {row.photos.map((photo) => {
