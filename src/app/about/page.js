@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation"
+import Image from "next/image"
 
 export default function About () {
     return (
@@ -8,6 +9,15 @@ export default function About () {
               </div>
               <div className="mt-2 md:mt-8">
                 <div className="max-w-xl mx-auto w-full">
+                  <div className="mb-6 w-full flex justify-center md:justify-center mobile-center-override">
+                    <Image
+                      src="/mya-schmitz.jpeg"
+                      alt="Mya Schmitz"
+                      width={150}
+                      height={150}
+                      className="rounded-full object-cover w-32 h-32 sm:w-36 sm:h-36"
+                    />
+                  </div>
                   <div className="mb-2">
                     <h2 className="text-4xl font-semibold mb-2">ABOUT</h2>
                     <p className="page-header">You can <a href="https://drive.google.com/file/d/1r2fMy5B16Ri29AJXlN9dhR20HGJFRUZf/view?usp=sharing" target="_blank" className="text-link font-bold">find my resumé here</a></p>
@@ -30,7 +40,7 @@ export default function About () {
                           <p className="">French Certificate</p>
                         </div>
                         <div>
-                          <p className="text-base font-bold">Relevant coursework</p>
+                          <p className="text-xl font-bold">Relevant coursework</p>
                           <p className="font-[--font-playfair-display]">Algorithms, Data Structures, Operating Systems, Computer Architecture, Artificial Intelligence</p>
                         </div>
                       </div>

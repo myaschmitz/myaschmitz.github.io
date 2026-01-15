@@ -22,7 +22,7 @@
 
   --background: var(--color-cape-cod-100);
   --foreground: #171717;
-  --link-color: #c47850;
+  --link-color: #a65d3a;
 }
 
 html {
@@ -34,7 +34,7 @@ html.dark {
   background-color: #242c2d;
   --background: var(--color-cape-cod-950);
   --foreground: #ededed;
-  --link-color: #e8a882;
+  --link-color: #d4a088;
 }
 
 @theme inline {
@@ -86,6 +86,20 @@ body::before {
   transition: background 0.3s ease;
 }
 
+/* Paper texture overlay */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.08;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='turbulence' baseFrequency='1.3' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
 html.dark body::before {
   background: linear-gradient(
     109deg,
@@ -100,6 +114,10 @@ html.dark body::before {
     #242c2d 28%,
     #242c2d 100%
   );
+}
+
+html.dark body::after {
+  opacity: 0.05;
 }
 
 .form-input,
@@ -160,5 +178,10 @@ html.dark .form-textarea:focus {
 
   .page-header {
     padding-right: 1rem;
+  }
+
+  /* Compensate for asymmetric page-content padding to achieve true center */
+  .mobile-center-override {
+    padding-left: 2rem;
   }
 }
