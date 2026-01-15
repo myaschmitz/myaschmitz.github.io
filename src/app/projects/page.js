@@ -28,7 +28,7 @@ export default function Projects() {
               </div>
             </div>
             <div className="mb-0">
-              <p className="text-xl flex flex-row gap-2 align-bottom">// <a href="/solar-system" target="_blank" rel="noopener noreferrer" className="text-link font-bold hover:underline">solar system</a><a href="https://github.com/myaschmitz/cs559-wbfinal-myaschmitz" target="_blank" className="hover:cursor-pointer"><CodeBracketSquareIcon className="h-7 w-7" /></a></p>
+              <p className="text-xl flex flex-row gap-2 align-bottom">// <a href="/solar-system" target="_blank" rel="noopener noreferrer" className="text-link font-bold hover:underline">solar system</a><a href="https://github.com/myaschmitz/cs559-wbfinal-myaschmitz" target="_blank" className="hover:cursor-pointer"><CodeBracketSquareIcon className="h-7 w-7 hover:text-cape-cod-500 dark:hover:text-cape-cod-300" /></a></p>
               <div className="font-[--font-playfair-display]">
                 <p className="text-base font-bold text-cape-cod-800 dark:text-cape-cod-200">Three.js</p>
                 <p>3d solar system simulation</p>
