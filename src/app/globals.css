@@ -22,14 +22,16 @@
 
   --background: var(--color-cape-cod-100);
   --foreground: #171717;
-  --link-color: #a86040;
+  --link-color: #c47850;
 }
 
 html {
   scrollbar-gutter: stable;
+  background-color: #e0e7e7;
 }
 
 html.dark {
+  background-color: #242c2d;
   --background: var(--color-cape-cod-950);
   --foreground: #ededed;
   --link-color: #e8a882;
@@ -122,6 +124,10 @@ html.dark .form-input:focus,
 html.dark .form-textarea:focus {
   background-color: var(--color-cape-cod-800);
   border-color: var(--color-cape-cod-500);
+}
+
+.text-link.dark {
+  color: var(--link-color);
 }
 
 .text-link {
